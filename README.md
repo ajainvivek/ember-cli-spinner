@@ -1,5 +1,7 @@
 # ember-cli-spinner
 
+#### [Visit project page and demo](http://ajainvivek.github.io/ember-cli-spinner/)
+
 `ember-cli-spinner` displays css3 driven ajax spinner for your ambitious Ember.js app.
 
 ## Usage

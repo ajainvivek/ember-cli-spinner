@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-spinner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AJAX Spinners for your Ember.js app.",
   "directories": {
     "doc": "doc",
@@ -11,8 +11,16 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
+  "demoURL": "http://ajainvivek.github.io/ember-cli-spinner/",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "spinner",
+    "loader",
+    "pre-loader",
+    "ajax-spinner",
+    "ajax-loader",
+    "page-loader",
+    "busy-indicator"
   ],
   "repository": "https://github.com/ajainvivek/ember-cli-spinner.git",
   "engines": {
