@@ -1,0 +1,19 @@
+.ember-cli-spinner {
+    display: table;
+    height: 100%;
+    width: 100%;
+    background: rgba(172, 172, 172, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9999999999999999;
+}
+.ember-cli-spinner .spinner {
+    vertical-align: middle;
+    display: table-cell;
+}
+.ember-cli-spinner .load-text {
+  color: #000;
+  font-weight: 200;
+  text-align: center;
+}

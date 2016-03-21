@@ -1,3 +1,17 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<div class="wrapper">
+  <div class="action-button shadow animate red" {{action "showSpinner"}}>Show Page Spinner</div>
+  <select id="soflow" class="wrapper-select">
+    <option value="pulse">Select Spinner</option>
+    {{#each types}}
+        <option {{bindAttr value="id" selected="selected"}}>{{label}}</option>
+    {{/each}}
+  </select>
+  <span>Timeout</span>
+  {{input value=timer class="input-txt"}}
+</div>
+<div class="box">
+  {{spinner-box}}
+</div>
+{{#ember-cli-spinner id="app" type="cube-grid"}}
+  Loading...
+{{/ember-cli-spinner}}

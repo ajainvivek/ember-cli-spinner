@@ -1,0 +1,12 @@
+{{#if isShow}}
+  <div class="ember-cli-spinner">
+    <div class="spinner">
+      <div class="{{className}}">
+        {{#each counters as |counter|}}
+          <div class="{{className}}{{counter}} sk-child"></div>
+        {{/each}}
+      </div>
+      <h4 class="load-text">{{yield}}</h4>
+    </div>
+  </div>
+{{/if}}
