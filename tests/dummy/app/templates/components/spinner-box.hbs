@@ -1,0 +1,11 @@
+<div class="action-button shadow animate blue" {{action "showBoxSpinner"}}>Show Box Spinner </div>
+<select id="soflow" class="box-select">
+  {{#each types}}
+      <option {{bindAttr value="id" selected="selected"}}>{{label}}</option>
+  {{/each}}
+</select>
+<span>Timeout</span>
+{{input value=timer class="input-txt"}}
+<div class="spinner-box">
+  {{ember-cli-spinner id="box" bgColor="transparent"}}
+</div>
