@@ -14,12 +14,29 @@ export default Component.extend({
   type: "pulse", //default
   counters: [],
   className: "sk-spinner-pulse",
+  bgColor: "rgba(0, 0, 0, 0.5)",
+  height: "40px",
+  width: "40px",
   spinner: inject.service(),
-  didInsertElement: function() {
+  color: "white",
+  didInsertElement: function () {
     let spinner = this.get("spinner");
     let type = this.get("type");
+    let color = this.get("color");
     this.setAnimation(type); //Set Spinner Type
     spinner.add(this);
+  },
+  setColor: function (color) {
+    this.set("color", color);
+  },
+  setBgColor: function (color) {
+    this.set("bgColor", color);
+  },
+  setHeight: function (height) {
+    this.set("height", height);
+  },
+  setWidth: function (width) {
+    this.set("width", width);
   },
   setAnimation: function (type) {
     switch (type) {

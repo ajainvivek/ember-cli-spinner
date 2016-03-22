@@ -1,9 +1,9 @@
 {{#if isShow}}
-  <div class="ember-cli-spinner">
+  <div class="ember-cli-spinner" style="background:{{bgColor}};">
     <div class="spinner">
-      <div class="{{className}}">
+      <div class="{{className}} {{color}}" style="height:{{height}};width:{{width}};">
         {{#each counters as |counter|}}
-          <div class="{{className}}{{counter}} sk-child"></div>
+          <div class="{{className}}{{counter}} sk-child {{color}}"></div>
         {{/each}}
       </div>
       <h4 class="load-text">{{yield}}</h4>

@@ -18,6 +18,18 @@ let Spinner = Ember.Service.extend({
   setAnimation : function (id, type) {
     let spinners = this.get("spinners");
     spinners[id].setAnimation(type);
+  },
+  setBgColor : function (id, color) {
+    let spinners = this.get("spinners");
+    spinners[id].setBgColor(color);
+  },
+  setHeight : function (id, height) {
+    let spinners = this.get("spinners");
+    spinners[id].setHeight(height);
+  },
+  setWidth : function (id, width) {
+    let spinners = this.get("spinners");
+    spinners[id].setHeight(width);
   }
 });
 
