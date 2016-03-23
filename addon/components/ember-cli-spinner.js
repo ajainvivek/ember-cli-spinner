@@ -91,8 +91,9 @@ export default Component.extend({
     }
   },
   show: function (options) {
-    let timeout = this.get("timeout") || options.timeout;
-    if (timeout !== null) {
+    let opts = options || {};
+    let timeout = this.get("timeout") || opts.timeout;
+    if (timeout !== null || timeout !== undefined) {
       this.set("isShow", true);
       run.later(this, function() {
         this.set("isShow", false);
