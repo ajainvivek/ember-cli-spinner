@@ -9,7 +9,7 @@ const {
 
 export default Component.extend({
   layout: layout,
-  timeout: null,
+  timeout: undefined,
   isShow: false,
   type: "pulse", //default
   counters: [],
@@ -92,8 +92,8 @@ export default Component.extend({
   },
   show: function (options) {
     let opts = options || {};
-    let timeout = this.get("timeout") || opts.timeout;
-    if (timeout !== null || timeout !== undefined) {
+    let timeout = opts.timeout;
+    if (timeout !== undefined) {
       this.set("isShow", true);
       run.later(this, function() {
         this.set("isShow", false);
