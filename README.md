@@ -104,3 +104,5 @@ npm install ember-cli-spinner --save-dev
 ## Browser Compatibility
 
 IE9 +, Chrome 21+, Mozilla, Safari
+
+[NPM Downloads]: https://img.shields.io/npm/dm/ember-cli-spinner.svg
