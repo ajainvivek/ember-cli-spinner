@@ -1,5 +1,7 @@
 # ember-cli-spinner
 
+[![NPM Downloads][]](https://www.npmjs.org/package/ember-cli-spinner)
+
 #### [Visit project page and demo](http://ajainvivek.github.io/ember-cli-spinner/)
 
 `ember-cli-spinner` displays css3 driven ajax spinner for your ambitious Ember.js app.
@@ -59,6 +61,7 @@ Animation types available:
 - Wandering Cubes - (wandering-cubes)
 - Chasing Dots - (chasing-dots)
 - Three Bounce - (three-bounce)
+- Three Bounce Horizontal - (three-bounce-horizontal)
 - Cube Grid - (cube-grid)
 
 ## API's
@@ -102,3 +105,5 @@ npm install ember-cli-spinner --save-dev
 ## Browser Compatibility
 
 IE9 +, Chrome 21+, Mozilla, Safari
+
+[NPM Downloads]: https://img.shields.io/npm/dm/ember-cli-spinner.svg

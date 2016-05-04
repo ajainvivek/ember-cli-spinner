@@ -15,6 +15,10 @@ let Spinner = Ember.Service.extend({
     let spinners = this.get("spinners");
     spinners[id].show(options);
   },
+  hide : function (id) {
+    let spinners = this.get("spinners");
+    spinners[id].hide();
+  },
   setAnimation : function (id, type) {
     let spinners = this.get("spinners");
     spinners[id].setAnimation(type);
