@@ -80,6 +80,10 @@ export default Component.extend({
         this.set("className", "sk-three-bounce");
         this.set("counters", [1, 2, 3]);
         break;
+      case "three-bounce-horizontal":
+        this.set("className", "sk-three-bounce-horizontal");
+        this.set("counters", [1, 2, 3]);
+        break;
       case "cube-grid":
         this.set("className", "sk-cube-grid");
         this.set("counters", [1, 2, 3, 4, 5, 6, 7, 8, 9]);
