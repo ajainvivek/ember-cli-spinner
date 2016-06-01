@@ -61,6 +61,7 @@ Animation types available:
 - Wandering Cubes - (wandering-cubes)
 - Chasing Dots - (chasing-dots)
 - Three Bounce - (three-bounce)
+- Three Bounce Horizontal - (three-bounce-horizontal)
 - Cube Grid - (cube-grid)
 
 ## API's

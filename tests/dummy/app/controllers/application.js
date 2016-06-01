@@ -33,6 +33,10 @@ export default Ember.Controller.extend({
   },{
     id : "three-bounce",
     label : "Three Bounce"
+  },
+  {
+    id : "three-bounce-horizontal",
+    label : "Three Bounce Horizontal"
   },{
     id : "cube-grid",
     label : "Cube Grid"
