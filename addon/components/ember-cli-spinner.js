@@ -6,7 +6,7 @@ const {
   inject,
   run
 } = Ember;
-
+const { escapeExpression } = Ember.Handlebars.Utils;
 export default Component.extend({
   layout: layout,
   timeout: undefined,
@@ -17,6 +17,12 @@ export default Component.extend({
   bgColor: "rgba(0, 0, 0, 0.5)",
   height: "40px",
   width: "40px",
+  bgColorStyle: Ember.computed('bgColor', function() {
+    return Ember.String.htmlSafe(escapeExpression('background:' + this.get('bgColor') + ';'));
+  }),
+  sizeStyle: Ember.computed('height','width', function() {
+    return Ember.String.htmlSafe(escapeExpression('height:' + this.get('height')+ ';width:' + this.get('width') + ';'));
+  }),
   spinner: inject.service(),
   color: "white",
   didInsertElement: function () {
