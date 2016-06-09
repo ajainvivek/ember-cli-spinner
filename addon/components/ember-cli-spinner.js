@@ -28,7 +28,6 @@ export default Component.extend({
   didInsertElement: function () {
     let spinner = this.get("spinner");
     let type = this.get("type");
-    let color = this.get("color");
     this.setAnimation(type); //Set Spinner Type
     spinner.add(this);
   },
