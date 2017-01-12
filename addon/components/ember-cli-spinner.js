@@ -11,6 +11,7 @@ export default Component.extend({
   layout: layout,
   timeout: undefined,
   isShow: false,
+  runLater: null,
   type: "pulse", //default
   counters: [],
   className: "sk-spinner-pulse",
@@ -104,14 +105,18 @@ export default Component.extend({
     let timeout = opts.timeout;
     if (timeout !== undefined) {
       this.set("isShow", true);
-      run.later(this, function() {
+      this.set('runLater', run.later(this, function() {
         this.set("isShow", false);
-      }, timeout);
+        this.set('runLater', null);
+      }, timeout));
     } else {
       this.set("isShow", true);
     }
   },
   hide: function () {
     this.set("isShow", false);
+    if(this.get('runLater')) {
+      run.cancel(this.get('runLater'));
+    }
   }
 });
